@@ -1,0 +1,5 @@
+{
+  "name": "Copy of AIS Hospital Agent System",
+  "description": "A multi-agent hospital information system based on AIS principles. Features a central coordinator, patient management, medical records (RME/FHIR), appointment scheduling, and itemized billing agents. Powered by Gemini 2.5.",
+  "requestFramePermissions": []
+}
