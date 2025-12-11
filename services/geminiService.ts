@@ -2,8 +2,8 @@ import { GoogleGenAI, Type, Schema } from "@google/genai";
 import { AgentType } from "../types";
 
 // Note: In a production app, the API Key comes from process.env.
-// For this environment, we rely on the injected process.env.API_KEY
-const apiKey = process.env.API_KEY || '';
+// We add a safety check for 'process' to avoid crashes in direct browser environments.
+const apiKey = (typeof process !== 'undefined' && process.env && process.env.API_KEY) || '';
 
 const ai = new GoogleGenAI({ apiKey });
 
